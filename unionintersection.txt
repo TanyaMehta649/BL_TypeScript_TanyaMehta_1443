@@ -1,0 +1,43 @@
+A union type allows a value to be one of several types. It is denoted using the pipe (|) operator.
+let value:string | number;
+value="hello";
+value=123;
+function print(id:number){
+    console.log(`${id}`)
+}
+id(123);
+id(56);
+type Person={
+    name:string;
+    age:numbera
+}
+type Employee={
+    empid=;
+    department:string;
+}
+type EmployeeDetails= Person | Employee
+const employee:EmployeeDetails={
+    name:'vinod',
+    age:29,
+    empid=1111,
+}
+//ya toh ek ki property aaegi ya dono ki
+INTERSECTION-A value of an intersection type must satisfy all the combined types simultaneously. Intersection types are defined using the & (ampersand) symbol.
+type Person = {
+    name: string;
+    age: number;
+};
+
+type Employee = {
+    employeeId: number;
+    department: string;
+};
+
+type Worker = Person & Employee;
+
+const worker: Worker = {
+    name: "John",
+    age: 30,
+    employeeId: 1234,
+    department: "Engineering",
+};
